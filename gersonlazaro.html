@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!--Preloader styles-->
+  <style>
+    .shai-preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #FFFFFF;
+      transition: opacity .5s ease-in-out;
+      opacity: 1;
+      z-index: 500;
+      display: flex;
+      justify-content: center;
+    }
+
+    .shai-preloader img {
+      opacity: 0;
+      transition: opacity .5s ease-in-out;
+      width: 110px;
+    }
+
+    .shai-preloader-opened img {
+      opacity: 1;
+    }
+
+    .shai-preloader-ended {
+      opacity: 0;
+    }
+
+    .shai-preloader-removed {
+      display: none;
+    }
+  </style>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/android-icon-96x96.png">
+  <link rel="manifest" href="/img/favicon/manifest.json">
+  <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+  <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#271769">
+
+  <!--Meta information-->
+  <meta name="description"
+    content="Gerson Lázaro is a very talented software engineering who loves to tell tales. We decided to promote all his knowledge and personality through a personal branding project." />
+  <meta name="robots" content="index, follow">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shai Design - gersonlazaro.com">
+  <meta name="twitter:url" content="https://www.shainnagaitan.com/gersonlazaro.html">
+  <meta name="twitter:description" content="Gerson Lázaro is a very talented software engineering who loves to tell tales. We decided to promote all his knowledge and personality through a personal branding project.">
+  <meta name="twitter:image:src" content="https://www.shainnagaitan.com/img/gerson_page_shi_design.jpg">
+  <meta content="Shai Design" property="og:site_name">
+  <meta content="gersonlazaro.com" property="og:title">
+  <meta content="website" property="og:type">
+  <meta content="Gerson Lázaro is a very talented software engineering who loves to tell tales. We decided to promote all his knowledge and personality through a personal branding project." property="og:description">
+  <meta content="https://www.shainnagaitan.com/gersonlazaro.html property="og:url">
+  <meta content="https://www.shinnagaitan.com/about.html" property="article:author">
+  <meta content="https://www.shainnagaitan.com/img/gerson_page_shi_design.jpg" property="og:image">
+  <title>Shai Design - gersonlazaro.com</title>
+</head>
+
+<body>
+  <div class="shai-preloader">
+    <img src="img/shai_logo.svg" alt="Shai preloader">
+  </div>
+  <div class="shai-menu-overlay">
+    <div>
+      <a href="index.html">
+        <img src="./img/svg/emoji_u1f4be.svg" class="shai-svg" alt="Projects">
+        <p>Projects</p>
+      </a>
+      <a href="about.html">
+        <img src="./img/svg/emoji_u1f469_1f3fb_200d_1f680.svg" class="shai-svg" alt="About">
+        <p>About</p>
+      </a>
+    </div>
+  </div>
+  <nav class="navbar navbar-default shai-navbar">
+    <div class="container-fluid shai-container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" aria-expanded="false" id="shai-menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img class="shai-logo" src="img/shai_design_logo.png" alt="Shai Design Logo">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Projects <span class="sr-only">(current)</span></a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <div class="container shai-details-project">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12 col-sm-push-6 shai-project-right">
+        <img class="shai-svg" src="img/svg/emoji_u1f9d1_1f3fb_200d_1f4bb_gerson.svg">
+        <span class="badge shai-badge">IN PROCESS <img class="shai-svg"
+            src="img/svg/emoji_u1f6a7_construction.svg"></span>
+        <h1 class="shai-project-title">gersonlazaro.com</h1>
+        <p class="shai-project-description">Gerson Lázaro is a very talented software engineering who loves to
+          tell tales. We decided to promote all his knowledge and personality through a personal branding
+          project. </p>
+        <p class="shai-project-description shai-project-description-last-child">Gerson, type, type & type.</p>
+      </div>
+      <div class="col-xs-12 col-sm-pull-6 col-sm-6">
+        <div class="shai-lottie-animation"></div>
+      </div>
+    </div>
+    <div class="row shai-gerson-page">
+      <div class="col-xs-12 col-sm-6">
+        <img class="img-responsive" src="img/programo_sin_punto_y_coma_gerson_lazaro.jpg" alt="Gerson Lázaro">
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <img class="img-responsive" src="img/Portafolio_Gerson_Lazaro.jpg" alt="Gerson Lázaro">
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid shai-container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-right shai-footer">
+        <a class="shai-footer-url" href="mailto:hey@shinnagaitan.com" target="_blank">Email me!</a>
+        <a class="shai-footer-url" href="https://www.linkedin.com/in/shinnagaitan/" target="_blank">Linkedin</a>
+      </div>
+    </div>
+  </div>
+  <!--Preloader script-->
+  <script>
+    var preloader = document.getElementsByClassName('shai-preloader')[0]
+
+    window.addEventListener('load', closePreload)
+
+    function closePreload() {
+      preloader.className += ' shai-preloader-opened'
+      setTimeout(function () {
+        preloader.className += ' shai-preloader-ended'
+        setTimeout(function () {
+          preloader.className += ' shai-preloader-removed'
+        }, 500)
+      }, 1000)
+    }
+  </script>
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

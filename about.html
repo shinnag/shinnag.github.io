@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!--Preloader styles-->
+  <style>
+    .shai-preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #FFFFFF;
+      transition: opacity .5s ease-in-out;
+      opacity: 1;
+      z-index: 500;
+      display: flex;
+      justify-content: center;
+    }
+
+    .shai-preloader img {
+      opacity: 0;
+      transition: opacity .5s ease-in-out;
+      width: 110px;
+    }
+
+    .shai-preloader-opened img {
+      opacity: 1;
+    }
+
+    .shai-preloader-ended {
+      opacity: 0;
+    }
+
+    .shai-preloader-removed {
+      display: none;
+    }
+  </style>
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/android-icon-96x96.png">
+  <link rel="manifest" href="/img/favicon/manifest.json">
+  <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+  <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#271769">
+  
+
+  <meta name="description"
+    content="Hello Sunshine, This is Shinna, and here's design.  Let’s work on something amazing." />
+  <meta name="robots" content="index, follow">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shai Design">
+  <meta name="twitter:url" content="https://www.shainnagaitan.com/about.html">
+  <meta name="twitter:description" content="Hello Sunshine, This is Shinna, and here's design.  Let’s work on something amazing.">
+  <meta name="twitter:image:src" content="https://www.shainnagaitan.com/img/shai.jpg">
+  <meta content="Shai Design" property="og:site_name">
+  <meta content="Shai Design" property="og:title">
+  <meta content="website" property="og:type">
+  <meta content="Hello Sunshine, This is Shinna, and here's design.  Let’s work on something amazing." property="og:description">
+  <meta content="https://www.shainnagaitan.com/about.html"" property="og:url">
+  <meta content="https://www.shinnagaitan.com/about.html" property="article:author">
+  <meta content="https://www.shainnagaitan.com/img/shai.jpg" property="og:image">
+  <title>Shai Design - About</title>
+</head>
+
+<body>
+  <div class="shai-preloader">
+    <img src="img/shai_logo.svg" alt="Shai preloader">
+  </div>
+  <div class="shai-menu-overlay">
+    <div>
+      <a href="index.html">
+        <img src="./img/svg/emoji_u1f4be.svg" class="shai-svg" alt="Projects">
+        <p>Projects</p>
+      </a>
+      <a id="shai-close-menu">
+        <img src="./img/svg/emoji_u1f469_1f3fb_200d_1f680.svg" class="shai-svg" alt="About">
+        <p class="active">About</p>
+      </a>
+    </div>
+  </div>
+  <nav class="navbar navbar-default shai-navbar">
+    <div class="container-fluid shai-container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" aria-expanded="false" id="shai-menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img class="shai-logo" src="img/shai_design_logo.png" alt="Shai Design Logo">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Projects</a></li>
+          <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+    <div class="row shai-about-info">
+      <div class="col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+        <div class="shai-rounded-image">
+          <img class="img-responsive" src="./img/shai.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-sm-6 col-sm-offset-1 col-xs-12">
+        <h1 class="shai-splash-text shai-about-title">Hey!</h1>
+        <h2 class="shai-splash-text-subtitle shai-about-subtitle">I'm <span>Shinna</span><img class="shai-svg"
+            src="./img/svg/emoji_u2728.svg" alt=""></h2>
+        <p class="shai-about-description">I’m UX Visual Designer who has worked in different User Design-Oriented
+          projects related to industrial contexts, public relations, and personal branding.</p>
+        <p class="shai-about-description">I adore my craft and to get involved in graphic creations and restructuring
+          design issues.</p>
+      </div>
+    </div>
+    <div class="row shai-contact-section">
+      <div class="col-sm-6 col-xs-12">
+        <p class="shai-text-here">I’m here because<br> <span>I love <span>easy to use things</span>, don't you?</span>
+        </p>
+        <hr>
+        <p class="shai-text-lets-work">So, <img src="./img/svg/emoji_u1f984_unicorn.svg" class="shai-svg" alt="">
+          <br><span>Let’s work on <br>something amazing <br><span>Drop me a line!</span></span></p>
+      </div>
+      <div class="col-sm-6 col-xs-12 shai-contact-form">
+        <form action="https://app.99inbound.com/api/e/aoUUvl3n" method="POST" >
+          <div class="form-group">
+            <label for="shaiName">Name</label>
+            <input type="text" name="name" class="form-control" id="shaiName" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="shaiEmail">Email*</label>
+            <input type="email" name="email" class="form-control" id="shaiEmail" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="shaiMessage">Message</label>
+            <textarea class="form-control" name="message" rows="3" id="shaiMessage" placeholder="Enter your message"></textarea>
+          </div>
+          <div style="position: absolute; left: -5000px;">
+            <input type="checkbox" name="fuzzy_pearl_argyle_building" value="1" tabindex="-1" autocomplete="no">
+          </div>
+          <p>
+            <span class="shai-message-sent">Message sent successfully </span>
+            <button type="submit" class="btn btn-default shai-btn-submit pull-right">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid shai-container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-right shai-footer">
+        <a class="shai-footer-url" href="mailto:hey@shinnagaitan.com" target="_blank">Email me!</a>
+        <a class="shai-footer-url" href="https://www.linkedin.com/in/shinnagaitan/" target="_blank">Linkedin</a>
+      </div>
+    </div>
+  </div>
+  <!--Preloader script-->
+  <script>
+    var preloader = document.getElementsByClassName('shai-preloader')[0]
+    var section = 'about'
+
+    window.addEventListener('load', closePreload)
+
+    function closePreload() {
+      preloader.className += ' shai-preloader-opened'
+      setTimeout(function () {
+        preloader.className += ' shai-preloader-ended'
+        setTimeout(function () {
+          preloader.className += ' shai-preloader-removed'
+        }, 500)
+      }, 1000)
+    }
+
+
+  </script>
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

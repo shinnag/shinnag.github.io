@@ -1,0 +1,710 @@
+/* Load external fonts */
+@import url('//fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&family=Raleway:wght@100;400;500;600;700&display=swap');
+
+
+
+
+/* Util*/
+
+.shai-svg {
+    height: 22px;
+}
+
+/* Overrides */
+
+.navbar-default .navbar-toggle {
+    border: none;
+    margin-top: 40px;
+    z-index: 300;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #291769;
+    height: 3px;
+    width: 24px;
+    transition: all .3s ease-in-out;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 6px;
+}
+
+.navbar-collapse {
+    border: none;
+    width: 100%;
+}
+
+/* Main Styles */
+
+.shai-navbar {
+    background: none;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+.shai-navbar .navbar-header {
+    height: 120px;
+}
+
+.shai-navbar .navbar-brand {
+    height: auto;
+    margin-top: 60px;
+    padding: 0;
+}
+
+.shai-navbar .shai-logo {
+    height: 60px;
+    width: 75px;
+}
+
+.shai-navbar li {
+    color: #46556C;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin-top: 66px;
+    margin-right: 50px;
+}
+
+.shai-navbar li:last-child {
+    margin-right: 0;
+}
+
+.shai-navbar .navbar-nav>li>a {
+    padding: 15px 2px 2px 2px;
+    transition: all .3s ease;
+}
+
+.shai-navbar .navbar-nav>li.active>a,
+.shai-navbar .navbar-nav>li>a:hover,
+.shai-navbar .navbar-nav>li>a:focus,
+.shai-navbar .navbar-nav>li>a:active {
+    color: #291769;
+    background: none;
+    box-shadow: none;
+    border-bottom: 2px solid #5D2AC3;
+}
+
+.shai-splash-text {
+    color: #5D2AC3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+}
+
+.shai-splash-text .shai-svg {
+    height: 42px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.shai-splash-text span {
+    color: #291769;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}
+
+.shai-splash-text-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 15px;
+    margin-top: 0px;
+}
+
+.shai-projects {
+    margin-top: 54px;
+}
+
+.shai-projects .img-responsive {
+    border-radius: 5px;
+}
+
+.shai-project-hover {
+    background-color: rgba(93, 42, 195, 0.1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    opacity: 0;
+    border-radius: 5px;
+    transition: opacity .3s ease-in-out;
+}
+
+.shai-project-hover+.shai-svg {
+    height: 28px;
+    position: absolute;
+    bottom: 14px;
+    left: 38px;
+}
+
+.shai-project-hover:hover {
+    opacity: 1;
+}
+
+.shai-project-hover-description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    background-color: rgba(93, 42, 195, 0.6);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.shai-project-hover-description p {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 56px;
+    padding-left: 72px;
+    font-weight: 600;
+}
+
+.shai-footer {
+    margin: 40px auto;
+}
+
+.shai-footer-url,
+.shai-footer-url:hover,
+.shai-footer-url:focus,
+.shai-footer-url:active {
+    color: #46556C;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Raleway, sans-serif;
+    margin-right: 35px;
+    text-decoration: none;
+}
+
+.shai-footer-url:last-child {
+    margin-right: 0px;
+}
+
+
+/* Details */
+
+.shai-details-project {
+    margin-top: 118px;
+}
+
+.shai-project-right>.shai-svg {
+    height: 40px;
+    margin-right: 8px;
+}
+
+.shai-project-right .badge .shai-svg {
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-left: 8px
+}
+
+.shai-badge {
+    border: 1px solid #5D2AC3;
+    border-radius: 13px;
+    background-color: #FAF8FF;
+    color: #5D2AC3;
+    font-size: 16px;
+    padding: 8px 16px 2px 16px;
+}
+
+.shai-project-title {
+    color: #5D2AC3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 49px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 59px;
+    margin: 26px auto;
+}
+
+.shai-project-description {
+    color: #46556C;
+    font-family: Montserrat;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.shai-project-description-last-child {
+    margin-bottom: 20px;
+}
+
+.shai-project-right .img-responsive {
+    margin: 23px auto;
+}
+
+.shai-rounded-image {
+    border-radius: 50%;
+    background-color: #6718CB;
+    padding-left: 10px;
+}
+
+.shai-rounded-image img {
+    border-radius: 50%;
+    padding-bottom: 10px;
+}
+
+.shai-about-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 52px;
+    color: #D6C4F2;
+}
+
+.shai-about-subtitle {
+    font-size: 49px;
+    color: #271769;
+    line-height: 50px;
+    margin-bottom: 32px;
+}
+
+.shai-about-subtitle span {
+    font-weight: 700;
+}
+
+.shai-about-subtitle .shai-svg {
+    height: 46px;
+    margin-bottom: 10px;
+}
+
+.shai-about-description {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #46556C;
+}
+
+.shai-about-info {
+    display: flex;
+    align-items: center;
+}
+
+.shai-contact-section {
+    margin-top: 128px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.shai-text-here {
+    font-size: 24px;
+    line-height: 29px;
+    color: #271769;
+}
+
+.shai-text-here>span {
+    font-weight: 600;
+}
+
+.shai-text-here>span>span {
+    color: #5D2AC3;
+}
+
+.shai-contact-section hr {
+    max-width: 66px;
+    margin-left: 0;
+    background-color: #5D2AC3;
+    height: 2px;
+    margin-bottom: 60px;
+}
+
+.shai-text-lets-work {
+    font-size: 41px;
+    line-height: 50px;
+    margin-top: 0;
+    color: #46556C;
+}
+
+.shai-text-lets-work>span {
+    font-weight: 600;
+    color: #2B116D;
+}
+
+.shai-text-lets-work>span>span {
+    color: #5D2AC3;
+}
+
+.shai-text-lets-work .shai-svg {
+    height: 40px;
+    margin-bottom: 6px;
+}
+
+.shai-gerson-page {
+    margin-top: 64px;
+}
+
+.shai-gerson-page div {
+    margin-bottom: 32px;
+}
+
+.shai-contact-form {
+    background-color: #F8F4FE;
+    padding: 44px 64px;
+    border-radius: 5px;
+}
+
+.shai-contact-form label {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.shai-contact-form input {
+    height: 40px;
+}
+
+.shai-contact-form input,
+.shai-contact-form input:focus,
+.shai-contact-form input:hover,
+.shai-contact-form input:active,
+.shai-contact-form textarea,
+.shai-contact-form textarea:hover,
+.shai-contact-form textarea:focus,
+.shai-contact-form textarea:active {
+    border: 1px solid #E0E0E0;
+    border-radius: 0;
+    padding: 8px 16px;
+    box-shadow: none;
+    margin-bottom: 16px;
+    outline: 0;
+}
+
+.shai-btn-submit,
+.shai-btn-submit:hover,
+.shai-btn-submit:focus,
+.shai-btn-submit:active {
+    border-radius: 1px;
+    padding: 8px 16px;
+    background-color: #5D2AC3;
+    color: #FFFFFF;
+    border-width: 0px;
+    outline: 0;
+}
+
+.shai-img-webpage {
+    border: 1px solid #EEEEEE;
+}
+
+.shai-message-sent {
+    color: #195104;
+    font-size: 16px;
+    padding-top: 8px;
+    display: none;
+}
+
+.shai-message-visible {
+    display: inline-block;
+}
+
+/* Responsive utilities */
+
+/* Smartphones */
+@media (max-width: 767px) {
+
+    .container,
+    .container-fluid.shai-container-fluid {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .row {
+        margin-left: -32px;
+        margin-right: -32px;
+    }
+
+    .row>div {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .shai-projects>div {
+        margin-bottom: 16px;
+    }
+
+    .shai-navbar .navbar-brand {
+        margin: 32px !important;
+    }
+
+    .shai-project-hover+.shai-svg {
+        height: 22px;
+        position: absolute;
+        bottom: 10px;
+        left: 42px;
+    }
+
+    .shai-project-hover,
+    .shai-project-hover:hover,
+    .shai-project-hover:focus,
+    .shai-project-hover:active {
+        opacity: 0;
+    }
+
+    .shai-details-project {
+        margin-top: 42px;
+    }
+
+    .shai-rounded-image,
+    .shai-text-lets-work {
+        margin-bottom: 42px;
+    }
+
+    .shai-project-title {
+        font-size: 32px;
+    }
+
+    .shai-footer {
+        text-align: center;
+    }
+
+    .shai-footer-url,
+    .shai-footer-url:hover,
+    .shai-footer-url:focus,
+    .shai-footer-url:active {
+        margin-right: 68px;
+    }
+
+    h1.shai-project-title {
+        margin: 10px auto 20px auto;
+    }
+
+    .shai-contact-section {
+        margin-top: 48px;
+    }
+
+    .shai-contact-section hr {
+        display: none;
+    }
+
+    .shai-text-lets-work {
+        text-align: center;
+        font-size: 38px;
+        margin-top: 30px;
+    }
+
+    .shai-text-here {
+        text-align: center;
+    }
+
+    .shai-about-title,
+    .shai-about-subtitle {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .shai-about-title {
+        font-size: 38px;
+    }
+
+    .shai-about-subtitle {
+        padding-left: 15px;
+        font-size: 41px;
+        margin-bottom: 32px;
+    }
+
+    .shai-about-info {
+        display: block;
+    }
+
+    .shai-project-right .img-responsive {
+        margin-bottom: 25px;
+        padding: 0;
+    }
+
+}
+
+/* Small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .shai-project-hover+.shai-svg {
+        height: 22px;
+        position: absolute;
+        bottom: 10px;
+        left: 24px;
+    }
+
+    .shai-project-hover,
+    .shai-project-hover:hover,
+    .shai-project-hover:focus,
+    .shai-project-hover:active {
+        opacity: 0;
+    }
+
+    .shai-project-title {
+        font-size: 32px;
+    }
+
+    .shai-nutrilink-right .col-xs-12 {
+        padding: 2px 36px;
+    }
+
+    .shai-nutrilink-right .img-responsive {
+        padding: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 144px;
+        margin: 0;
+    }
+
+    .shai-rounded-image {
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+}
+
+/* Large tablets and small laptops*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .shai-img-huellitapp {
+        width: 401px;
+    }
+
+    .shai-nutrilink-right .col-xs-12 {
+        padding: 8px 22px;
+    }
+    
+    .shai-nutrilink-right .img-responsive {
+        margin: 0;
+    }
+
+    .shai-rounded-image {
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+}
+
+/* Desktop and large devices */
+@media (min-width: 1200px) {
+    .shai-img-huellitapp {
+        width: 459px;
+    }
+
+    .shai-rounded-image {
+        margin-left: -24px;
+        margin-right: 24px;
+    }
+}
+
+
+/* Mobile first utilities */
+
+/* Smartphones */
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+}
+
+/* Small tablets */
+@media (min-width: 768px) {}
+
+/* Large tablets and small laptops*/
+@media (min-width: 992px) {
+    .container-fluid {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .container-fluid.shai-container-fluid {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+/* Desktop and large devices */
+@media (min-width: 1200px) {}
+
+.navbar-toggle {
+    z-index: 300;
+}
+
+.shai-menu-opened {
+    overflow: hidden;
+}
+
+.shai-menu-opened .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(6.5px, 6.5px);
+}
+
+.shai-menu-opened .icon-bar:nth-child(2) {
+    transform: translateX(-25px);
+    background: transparent;
+}
+
+.shai-menu-opened .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6.5px, -6.5px);
+}
+
+.shai-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .95);
+    transition: opacity .5s ease-in-out;
+    opacity: 0;
+    z-index: 200;
+}
+
+.shai-menu-overlay>div {
+    position: absolute;
+    top: 124px;
+    width: 100%;
+    bottom: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.shai-menu-overlay a,
+.shai-menu-overlay a:hover,
+.shai-menu-overlay a:focus,
+.shai-menu-overlay a:active {
+    height: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.shai-menu-overlay a:first-child {
+    border-bottom: 1px solid #D6C4F2;
+}
+
+.shai-menu-overlay a .shai-svg {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.shai-menu-overlay a p {
+    color: #46556C;
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.shai-menu-overlay a p.active {
+    color: #5D2AC3;
+}
+
+.shai-block {
+    display: block;
+}
+
+.shai-visible {
+    opacity: 1;
+}
